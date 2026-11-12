@@ -17,8 +17,7 @@ on:
       - 'package.json'
       - 'admin/bun.lock'
       - 'admin/package.json'
-  schedule:
-    - cron: '30 6 * * 1'  # weekly, Monday 06:30 UTC
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
 
 permissions:

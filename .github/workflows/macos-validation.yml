@@ -20,8 +20,7 @@ name: macOS 26 validation
 #   #6056  typecheck on macOS, in its own job (test.yml's typecheck shape).
 
 on:
-  schedule:
-    - cron: '41 9 * * *'  # 09:41 UTC daily, staggered from the other nightlies
+  # Cron is disabled in this fork; other triggers remain available.
   pull_request:
     types: [labeled, synchronize, reopened]
   workflow_dispatch:

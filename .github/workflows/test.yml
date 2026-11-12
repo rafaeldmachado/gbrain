@@ -9,8 +9,7 @@ on:
   # run against the queued merge commit. docs/RELEASING.md#merge-queue.
   merge_group:
   # Nightly full matrix: every Bun version and native target, like a push to master.
-  schedule:
-    - cron: '23 7 * * *'
+  # Cron is disabled in this fork; other triggers remain available.
   # Manual dispatch lets a local dev/agent offload the suite to GitHub's
   # on-demand runners from ANY branch (see scripts/ship-remote-tests.sh).
   # Frees a load-saturated local machine (e.g. many Conductor agents running

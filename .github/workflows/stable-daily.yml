@@ -25,9 +25,7 @@ name: Stable daily
 # by git.
 
 on:
-  schedule:
-    - cron: '17 5 * * *'
-    - cron: '17 13 * * *'
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       dry_run:

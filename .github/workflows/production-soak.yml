@@ -15,8 +15,7 @@ name: Production soak
 # consecutive soaks are clean on it, as its own reviewed PR.
 
 on:
-  schedule:
-    - cron: '17 6 * * 1'
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       pages:

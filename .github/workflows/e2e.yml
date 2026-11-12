@@ -10,8 +10,7 @@ on:
   # Event parity (docs/TESTING.md#event-parity): the concurrency suffix below only
   # separates a full_corpus dispatch; the schedule-only full-corpus lanes are a
   # named exception documented at the coverage pipeline.
-  schedule:
-    - cron: '0 6 * * *'  # Nightly at 6am UTC
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       full_corpus:

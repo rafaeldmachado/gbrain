@@ -10,8 +10,7 @@ name: Sync freshness gate
 # the managed cells with GBRAIN_SYNC_LEVEL_REUSE_VERIFY=1. Nightly and on dispatch; never in the PR tier.
 
 on:
-  schedule:
-    - cron: '29 9 * * *'
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       runs:

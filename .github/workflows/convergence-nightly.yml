@@ -16,8 +16,7 @@ name: Convergence nightly
 # needs it green on the release's exact sha.
 
 on:
-  schedule:
-    - cron: '17 9 * * *'
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       seed:

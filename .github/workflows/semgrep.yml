@@ -12,8 +12,7 @@ name: Semgrep
 on:
   pull_request:
     branches: [master]
-  schedule:
-    - cron: '30 7 * * 1'  # weekly, Monday 07:30 UTC
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
 
 permissions:

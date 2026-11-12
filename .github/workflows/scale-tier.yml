@@ -27,8 +27,7 @@ on:
   pull_request:
     branches: [master]
     types: [opened, synchronize, reopened, labeled]
-  schedule:
-    - cron: '41 8 * * *'
+  # Cron is disabled in this fork; other triggers remain available.
   workflow_dispatch:
     inputs:
       pages:
